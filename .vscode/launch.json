@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/dpqls/Desktop/Study_C-",
+      "program": "/Users/dpqls/Desktop/Study_C-/build/Debug/outDebug"
+    }
+  ]
+}
