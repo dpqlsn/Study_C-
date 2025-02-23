@@ -12,7 +12,7 @@ void showTime(Time);
 
 Time sum(Time*, Time*); 
 int main() {
-    // 함수는 원본이 아는 복사본을 대상으로 작업
+    // 구조체의 규모가 너무 커진다면 함수는 원본이 아는 복사본을 대상으로 작업
 
     Time day1 = { 5, 45 };
     Time day2 = { 4, 45 };
