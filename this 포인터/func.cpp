@@ -23,7 +23,8 @@ void Stock::show() {
 Stock& Stock::topval(Stock& s) {
 	if (s.share_val > share_val)
 		return s;
-	else return *this;
+	else return *this; // this 포인터는 멤버 함수를 호출하는데 사용된 객체를 지시, 주소를 나타냄
+    // this 포인터 : C++에서 멤버 함수를 호출하는데 사용한 객체를 지시할 수 있음 
 }
 
 
