@@ -12,6 +12,7 @@ int main() {
 	Time total;
 	total = day1.operator+(day2);
 	total.show();
+    // 함수 호출 하듯 사용해도 됨
 
 	return 0;
 }
