@@ -3,6 +3,7 @@
 #define TIMEH
 
 // 오버로딩 : 연산자들에게 다중적인 의미를 부여하는 것 
+// << 연산자는 friend를 통하여 구현할 수 있음
 
 class Time
 {
@@ -21,8 +22,13 @@ public:
 	Time operator+(Time&);
     // 오버로딩을 하기 위해선 operator를 사용하고 그 뒤 사용할 산술연산자를 붙임
     // 함수 호출 하듯 사용해도 됨
+	Time operator*(int);
 	void show();
 	~Time();
+	friend Time operator*(int n, Time& t) {
+		return t * n;
+	}
+	friend std::ostream& operator<<(std::ostream&, Time&);
 };
 
 #endif //TIMEH

@@ -14,5 +14,10 @@ int main() {
 	total.show();
     // 함수 호출 하듯 사용해도 됨
 
+    Time t1(3, 45);
+
+    t1.show();
+    cout << t1;
+
 	return 0;
 }

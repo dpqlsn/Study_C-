@@ -37,3 +37,17 @@ void Time::show() {
 Time::~Time()
 {
 }
+
+Time Time::operator*(int n) {
+	Time result;
+	long resultMin = hours * n * 60 + mins * n;
+	result.hours = resultMin / 60;
+	result.mins = resultMin % 60;
+	return result;
+}
+
+std::ostream& operator<<(std::ostream& os, Time& t) { 
+    // std::ostream& 이 함수가 OS 스트림의 객체에 대한 참조를 리턴한다는 것 의미
+	os << t.hours << "시간 " << t.mins << "분";
+	return os;
+}
