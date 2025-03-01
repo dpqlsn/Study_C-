@@ -7,6 +7,7 @@ const int MAX = 3;
 int main() {
 
 	Time* times[MAX]; // 포인터로서 배열을 만듦
+	// 원형 클래스의 포인터로 배열을 만들고 파생 클레스의 원소까지 저장 가능
 	int day;
 	int hours;
 	int mins;
@@ -21,7 +22,7 @@ int main() {
 		cout << "일 정보가 있다면 1, 없다면 0을 입력하십시오." << endl;
 		cin >> check;
 		if (check == '0')
-			times[i] = new Time(hours, mins);
+			times[i] = new Time(hours, mins); // Time에 적용된 파괴자 역시 버추얼로 선언해야함
 		else {
 			cout << "일을 입력하십시오." << endl;
 			cin >> day;
