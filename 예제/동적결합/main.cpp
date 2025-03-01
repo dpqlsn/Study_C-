@@ -6,7 +6,7 @@ const int MAX = 3;
 
 int main() {
 
-	Time* times[MAX];
+	Time* times[MAX]; // 포인터로서 배열을 만듦
 	int day;
 	int hours;
 	int mins;
@@ -31,7 +31,7 @@ int main() {
 
 	for (int i = 0; i < MAX; i++) {
 		cout << i + 1 << "번째 정보입니다." << endl;
-		times[i]->show();
+		times[i]->show(); // NewTime에 대응되는 show가 동작한 것을 확인할 수 있음
 	}
 
 	for (int i = 0; i < MAX; i++) {
